@@ -1,11 +1,12 @@
 :root { /* Here you can change all the colors I used for the theme, with the exception of the little house icon since it's a png. Its color is purple. */
   --BGDefaultColor: #121213;
   --BGLighterColor: #1e1e21;
+  --BGLightestColor: #303036;
   --CustomDarkPurple: #5d2871;
   --CustomDarkerPurple: #411e4e;
   --CustomLightPurple: #b321e8;
   --CustomLighterPurple: #bb00ff;
-  --DownloadText: #ff00de; /*#e800ff*/
+  --DownloadText: #ff00ff; /*#e800ff*/
   
   --BGLighterColor00: #1e1e2100; /* CHANGE ONLY THE FIRST 6 CHARACTERS, KEEP 00 AT THE END AT ALL TIMES */
   --BGLighterColor40: #1e1e2140; /* CHANGE ONLY THE FIRST 6 CHARACTERS, KEEP 40 AT THE END AT ALL TIMES */
@@ -18,6 +19,12 @@
 }
 
 /* COLOR PALLETT */
+[class*="pagedsettings_PagedSettingsDialog_Title_"],
+.DialogBody a
+{
+  color: var(--DownloadText);
+}
+
 [class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"][class*="appdetailsplaysection_Favorited_"] svg path {
   stroke: var(--CustomLightPurple);
   fill: var(--CustomLightPurple);
@@ -37,6 +44,7 @@
 [class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"][class*="gamelistentry_Updating_"]
 {
   color: var(--DownloadText);
+  font-weight: 500;
 }
 
 [class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) [class*="supernav_MenuButton_"] {
@@ -44,7 +52,8 @@
   text-shadow: 0px 0px 1px var(--CustomLightPurple);
 }
 
-[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) [class*="supernav_MenuButton_"]::after
+[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) [class*="supernav_MenuButton_"]::after,
+[class*="gamepaddialog_ToggleRail_"]::before
 {
   background: var(--CustomLightPurple);
 }
@@ -55,7 +64,8 @@
 [class*="appdetailsplaysection_DetailsProgressContainer_"] [class*="appdetailsplaysection_DetailsProgressBar_"],
 [class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled,
 .DesktopUI [class*="installrequest_FolderOption_"][class*="installrequest_Active_"],
-button.DialogButton.Primary
+button.DialogButton.Primary,
+[class*="radio_Button_"][class*="radio_Active_"]
 {
   background: var(--CustomDarkPurple); 
 }
@@ -65,9 +75,13 @@ button.DialogButton.Primary
 [class*="appactionbutton_ButtonChild_"][class*="appactionbutton_StreamingSelector_"],
 :not([class*="appactionbutton_Disabled_"]) > .DesktopUI [class*="installrequest_FolderOption_"][class*="installrequest_Active_"]:hover,
 :not([class*="appactionbutton_Disabled_"]) > button.DialogButton.Primary:hover,
-[class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled:hover
+[class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled:hover,
+[class*="radio_Button_"][class*="radio_Active_"]:hover
 {
   background: var(--CustomDarkerPurple);
+}
+[class*="gamepadslider_SliderTrack_"] {
+  --left-track-color: var(--CustomDarkerPurple);
 }
 
 /*.bottombar_ProgressBarWrapper_2_Fom .bottombar_ProgressBar_wi0pD*/
@@ -97,16 +111,35 @@ button.DialogButton.Primary
 [class*="appactivityday_PartnerEventMediumImage_Container_"],
 [class*="appdetailscommunityfeed_HeaderStyles_"],
 [class*="appactivityday_PartnerEventLargeUpdate_"],
-[class*="allcollections_Collection_"]
+[class*="allcollections_Collection_"],
+[class*="downloads_TopBar_"],
+[class*="pagedsettings_PagedSettingsDialog_PageListColumn_"]
 {
   background: var(--BGDefaultColor) !important;
 }
 
 [class*="appdetailsachievementssection_AdditionalItem_"],
-[class*="appdetailsplaysection_StickyHeader_"] [class*="appdetailsplaysection_Glassy_"]
+[class*="appdetailsplaysection_StickyHeader_"] [class*="appdetailsplaysection_Glassy_"],
+[class*="downloadgraph_GraphAndStats_"]
 {
   background-color: var(--BGDefaultColor) !important;
 }
+
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"],
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"],
+[class*="gamelistentry_Selected_"][class*="gamelistentry_Container_"]:hover,
+[class*="gamelistentry_Selected_"] [class*="gamelistentry_Container_"]:hover,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z:hover,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z :hover,
+.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z:hover,
+.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy,
+.gamelistentry_Selected_1UBpA .gamelistentry_Container_2-O4Z :hover,
+.gamelistentry_Container_2-O4Z:hover,
+.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy
+{
+  background-color: var(--BGLightestColor) !important;
+}	
 
 /* [class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"] {} */
 
