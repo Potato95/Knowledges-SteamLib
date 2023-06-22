@@ -1,5 +1,7 @@
 # Knowledge's SteamLib
 
+Still work-in-progress
+
 ## Installation
 
 My skin was made and tested on SFP, I don't use Millenium.
