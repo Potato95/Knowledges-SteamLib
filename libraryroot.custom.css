@@ -18,8 +18,12 @@
 }
 
 /* COLOR PALLETT */
-[class*="appactivityday_PartnerEventTypeUpdate_"]
-{
+[class*="appdetailsplaysection_MenuButton_"][class*="appdetailsplaysection_FavoriteButton_"][class*="appdetailsplaysection_Favorited_"] svg path {
+  stroke: var(--CustomLightPurple);
+  fill: var(--CustomLightPurple);
+}
+
+[class*="appactivityday_PartnerEventTypeUpdate_"] {
   color: var(--CustomLightPurple);
 }
 
@@ -104,8 +108,7 @@ button.DialogButton.Primary
   background-color: var(--BGDefaultColor) !important;
 }
 
-[class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"] {
-}
+/* [class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"] {} */
 
 [class*="gamelistbar_Container_"],
 [class*="libraryhome_Container_"],
@@ -119,6 +122,7 @@ button.DialogButton.Primary
 [class*="downloads_ItemLists_"],
 [class*="downloads_SectionItem_"],
 [class*="appgrid_AppGridSectionHeader_"]::after,
+div.ModalPosition_TopBar,
 .DialogContent,
 .DialogContentTransition
 {
@@ -147,7 +151,9 @@ button.DialogButton.Primary
   background: linear-gradient(to right, var(--CustomLighterPurple00) 0%, var(--CustomLighterPurple40) 18px, var(--CustomLighterPurple) 18px, var(--CustomLighterPurple) 22px);
 }
 
-[class*="appactivityday_PartnerEventLargeUpdate_"] {
+[class*="appactivityday_PartnerEventLargeUpdate_"],
+[class*="appactivityday_Event_"][class*="appactivityday_PartnerEventFeatured_"]
+{
   border-image: none;
 }
 
