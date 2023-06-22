@@ -23,6 +23,10 @@ My skin was made and tested on SFP, I don't use Millenium.
 
 4. Scroll up a bit. At "Steam skin" select "Knowledges-SteamLib-\[version]" and restart Steam if necessary ("Restart Steam" in SFP's Home)
 
+## Customizing colors
+
+Inside libraryroot.custom.css you can find :root right at the top, where I stored all the hex colors you can change. I tried to make it so that all the elements share the same color where it makes sense, so if you change the color of the play button, for example, it will also change the one on the install button.
+
 ## Skin Previews
 
 - Main window
