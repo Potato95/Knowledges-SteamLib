@@ -14,6 +14,7 @@ My skin was made and tested on SFP, I don't use Millenium.
 
 2. In SFP, select "Open File" > skins, and extract my folder inside the folder that just opened.
 - The structure here should be "steam\steamui\skins\Knowledges-SteamLib-\[version]\", with css and js files inside the last folder.
+  
   ![image](https://i.imgur.com/0VJkp7W.png)
 
 3. Go back to SFP, open its configuration menu, scroll down and activate "Inject JavaScript" (only do this for trusted sources), some UI elements won't be correctly placed and/or fixed without it.
