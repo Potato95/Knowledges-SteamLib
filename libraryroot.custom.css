@@ -1,5 +1,4 @@
 :root {
-  --PadVar: 394px;
   --BGDefaultColor: #121213;
   --BGLighterColor: #1e1e21;
   --CustomDarkPurple: #5d2871;
@@ -421,7 +420,6 @@ Adapted from LIGHT-UI by Angelo*/
 
 [class*="bottombar_BottomBar_"] {
   width: -webkit-fill-available !important;
-  /*margin: 0px 370px 0px var(--PadVar) !important;*/
   padding: 0px !important;
   position: fixed !important;
   top: 0 !important;
