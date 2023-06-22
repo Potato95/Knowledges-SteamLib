@@ -1,13 +1,11 @@
 if(document.title == "Steam") {
 	console.log('hello from patcher');
-	//const phantomtimeout = setTimeout(marginfix, 2000);
 }
 
 function marginfix() {
 	var objref1 = document.querySelector("div.titlebarcontrols_TitleBarControls_3cykd.steamdesktop_TitleBarControls_1-9si");
 	var objref2 = document.querySelector("div.steamdesktop_WindowControls_qP17e");
 	var objref01 = document.querySelector("div.bottombar_FriendsButton_1TdaA");
-	//var objref11 = document.querySelector("div.titlebarcontrols_AccountMenu_3yD46.offline");
 	console.log('objects selected');
 	
 	var width1 = objref1.getBoundingClientRect().width;
@@ -27,10 +25,7 @@ function marginfix() {
 	console.log('margins applied');
 }
 
-//objref11.addEventListener("onchange", function(){ console.log("Hello World!"); });
-//objref11.onchange = function(){ console.log("Hello World!"); };
-
-import { waitForElement } from './waitForElement.js';
+import { waitForElement } from './Utilities/waitForElement.js';
 
 async function waitele()
 {
