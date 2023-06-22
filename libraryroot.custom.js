@@ -49,6 +49,7 @@ async function waitele()
 
 waitele();
 
+import './Utilities/restartButton.js';
 
 
 
