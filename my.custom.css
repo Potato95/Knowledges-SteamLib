@@ -81,7 +81,6 @@ button.DialogButton.Primary
 [class*="steamdesktop_TopBar_"], 
 [class*="bottombar_BottomBar_"],
 [class*="appdetailssection_Highlight_"],
-/*[class*="appdetailsachievementssection_AdditionalItem_"],*/
 [class*="posttextentry_PostTextEntry_"] [class*="posttextentry_PostTextEntryArea_"],
 [class*="appactivityday_Event_"] [class*="appactivityday_EventBody_"],
 [class*="appdetailscommunityfeed_Guide_"] [class*="appdetailscommunityfeed_TopSectionInner_"],
@@ -107,8 +106,6 @@ button.DialogButton.Primary
 }
 
 [class*="appdetailsplaysection_Glassy_"][class*="appdetailsplaysection_PlayBar_"] {
-  /*background: linear-gradient(to right, var(--BGLighterColor00) 0%, var(--BGLighterColor40) 18px, var(--BGLighterColor) 18px, var(--BGLighterColor) 22px);*/
-  /*background: linear-gradient(to top, rgba(36, 40, 47, 0) 0%, rgba(43, 57, 66, 0.2) calc(100% - 2px), rgba(193, 202, 207, 0.1) calc(100% - 1px), rgba(29, 29, 29, 0.3) 100%)*/
 }
 
 [class*="gamelistbar_Container_"],
@@ -249,7 +246,6 @@ button.DialogButton.Primary
 
 [class*="gamelistsearchbar_Container_"] {
   grid-row: 3;
-  /*order: 3*/
 }
 
 [class*="gamelist_NoSearchResultsContainer_"] {
@@ -278,32 +274,6 @@ button.DialogButton.Primary
   top: -435px;
 }
 
-/*[class*="rootmenu_RootMenuButton_"]:nth-of-type(2) {
-  margin-top: 10px !important;
-  right: 40px !important;
-  position: relative !important;
-  margin-right: 0px !important;
-}*/
-
-/* div.HighPerfMode .appdetails_ScrollContainer_2l416 {
-    perspective: 1.5px;
-} */
-
-/* div.HighPerfMode .sharedappdetailsheader_HeaderBackgroundImage_1sarA 
-[class*="HighPerfMode"] [class*="sharedappdetailsheader_HeaderBackgroundImage_"] {
-    transform: translateY(-1px);
-} */
-
-/*.sharedappdetailsheader_BoxSizer_30GVp .sharedappdetailsheader_BottomLeft_TJInl {
-	top: 60% !important;
-	position: absolute
-} /*
-
-/*.sharedappdetailsheader_BoxSizer_30GVp {
-    top: 20% !important;
-    position: absolute;
-}*/
-
 /* Gamelist entry - font size */
 
 --HoverOverlayPosition: 0;  /* Default: 0. Set 0 if default JS, unset if tweaked JS */
@@ -319,33 +289,14 @@ button.DialogButton.Primary
   height: 100%;
 }
 
-/* Gamelist entry - icon size */ /*
-.gamelistentry_Container_2-O4Z .gamelistentry_GameIcon_ga1hy {
-  height: 22px;
-  width: 22px;
-} */
-
 /* Fix hover text to the bottom. With JavaScript tweaks this can be dynamic.*/
 
 .gamelistentry_FriendStatusHover_2iiN7 {
   bottom: var(--HoverOverlayPosition) !important;
 }
 
-/* Context Menu font size 
-.contextmenu_contextMenuContents_2EstN {
-  font-size: var(--ContextMenuFontSize);
-} */
-
-/* Context Menu line spacing/height 
-.contextmenu_contextMenuItem_1n7Wl {
-  line-height: var(--ContextMenuLineHeight);
-  height: var(--ContextMenuLineHeight);
-}*/
-
 /* remove border */
 .gamelistsectionheader_Container_2sYIg {
-  /*box-sizing: border-box;
-  color: #707379;*/
   border: 0px solid rgba(0, 0, 0, 0);
 }
 
@@ -354,12 +305,6 @@ button.DialogButton.Primary
   margin-top: 3px;
   padding: 0px 9px 5px 0px;
 }
-
-/* category name - font size and height
-.gamelistsectionheader_SectionName_2mZ8L {
-  font-size: 12px;
-  height: 15px;
-}*/
 
 /* category count - font size and height*/
 .gamelistsectionheader_SectionCount_29ute {
@@ -370,26 +315,11 @@ button.DialogButton.Primary
 /* Fix hover text to the bottom if default JS, position dynamically if JS tweaked. */
 .gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy {
   zoom: .95;
-  /*position: fixed;
-  height: 28px;
-  bottom: var(--HoverOverlayPosition);*/
 }
-
-/*[class*="hoverposition_HoverPosition_"] {
-  position: absolute;
-}*/
 
 .library_LeftListSizableContainer_9sPoV {
   display: var(--ShowLeftSidebar);
 }
-
-/*.gamelisthome_Bar_3pSPl.gamelisthome_Selected_eNLOx {
-  border-radius: 3px;
-}*/
-
-/*.gamelisthome_Bar_3pSPl.gamelisthome_CollectionButton_30KGS {
-  margin-left: 6px;
-}*/
 
 /*Home button text centred*/
 .gamelisthome_Label_3O48L {
@@ -451,19 +381,19 @@ Adapted from LIGHT-UI by Angelo*/
 .gamelisthome_Bar_3pSPl:hover .gamelisthome_Label_3O48L {													 
 	visibility: initial !important;
     color: rgba(0,0,0,0) !important;
-    background-image: url("home_hv.png") !important;
+    background-image: url("Images/home_hv.png") !important;
 }
 
 .gamelisthome_Bar_3pSPl.gamelisthome_Selected_eNLOx .gamelisthome_Label_3O48L {
 	visibility: initial !important;
-    background-image: url("home_hl.png") !important;
+    background-image: url("Images/home_hl.png") !important;
 }
 
 .gamelisthome_Bar_3pSPl .gamelisthome_Label_3O48L {
 	visibility: initial !important;
     transition: filter 0.3s ease-in-out;
     color: rgba(0,0,0,0) !important;
-    background-image: url("home.png") !important;
+    background-image: url("Images/home.png") !important;
     background-size: 20px !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
@@ -513,10 +443,6 @@ Adapted from LIGHT-UI by Angelo*/
   transform: scale(1.5);
 }
 
-/*[class*="bottombar_FriendsButton_"] {
-  zoom: 1.5 !important;
-}*/
-
 [class*="bottombar_DownloadStatusContent_"] {
   padding: 0px;
 }
@@ -530,10 +456,6 @@ Adapted from LIGHT-UI by Angelo*/
   max-width: 1610px;
 }
 
-/*[class*="libraryhome_UpdatesContainer_"] {
-  order: 2;
-}*/
-
 [class*="libraryhome_InnerContainer_"] > div:nth-child(1) {
   order: 2;
 }
@@ -545,50 +467,6 @@ Adapted from LIGHT-UI by Angelo*/
 [class*="bottombar_DetailedDownloadProgress_"] {
   max-width: 250px !important;
 }
-/*
-
-:not([class*="appactionbutton_Disabled_"]) > [class*="appactionbutton_Green_"] > [class*="appactionbutton_ButtonChild_"]:hover svg {
-  fill: white !important; 
-}
-
-[class*="appactionbutton_Green_"] > [class*="appactionbutton_ButtonChild_"] svg {
-  fill: white !important; 
-}
-
-:not([class*="appactionbutton_Disabled_"]) > [class*="appactionbutton_ButtonChild_"] svg {
-  fill: white !important;
-}
-
-:not([class*="appactionbutton_Disabled_"]) > [class*="appactionbutton_ButtonChild_"] svg path {
-  stroke: white !important; 
-}
-
-:not([class*="appactionbutton_Disabled_"]) > [class*="appactionbutton_ButtonChild_"] svg line, :not([class*="appactionbutton_Disabled_"]) > [class*="appactionbutton_ButtonChild_"] svg polygon {
-  stroke: white !important;
-  fill: white !important;
-} */
-/*
-[class*="rootmenu_RootMenuButton_"]:nth-of-type(1) {
-  margin-top: 1px !important;
-  line-height: 5px !important;
-  margin-right: 40px !important;
-  font-size: 0px !important;
-  background-repeat: no-repeat !important;
-  background-image: url("https://i.imgur.com/BRbNLrE.png") !important;
-  background-size: 24px !important;
-}
-
-[class*="rootmenu_RootMenuBar_"] {
-  padding-left: 32px;
-}
-
-[class*="rootmenu_SteamButton_"] [class*="rootmenu_Logo_"] {
-  display: none;
-}*/
-/* old root menu button */ /*
-.rootmenu_SteamButton_bSKGl::before {
-  display: none;
-} */
 
 /* old root menu button */
 .rootmenu_SteamButton_bSKGl {
@@ -599,14 +477,14 @@ Adapted from LIGHT-UI by Angelo*/
 /* root menu button image */
 [class*="rootmenu_RootMenuButton_"]:nth-of-type(1) {
   background-repeat: no-repeat !important;
-  background-image: url("Steam.svg"); /* #8b929a */
+  background-image: url("Images/Steam.svg"); /* #8b929a */
   background-size: 32px !important;
   margin: 0px -7px 4px 0px;
   transition: .20s ease-in-out;
 }
 
 [class*="rootmenu_RootMenuButton_"]:nth-of-type(1):hover {
-  background-image: url("Steam_hv.svg"); /* #ffffff */
+  background-image: url("Images/Steam_hv.svg"); /* #ffffff */
   transition: .20s ease-in-out;
 }
 
@@ -620,11 +498,3 @@ Adapted from LIGHT-UI by Angelo*/
 [class*="rootmenu_RootMenuBar_"] {
   padding-left: 3px;
 }
-
-/* Root menu button */ /*
-[class*="rootmenu_RootMenuButton_"]:nth-of-type(2)::after {
-  content: "" !important;
-  margin-left: 30px !important;
-  font-size: 13px !important;
-  color: white !important;
-} */
