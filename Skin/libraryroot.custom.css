@@ -40,7 +40,9 @@
   color: var(--CustomLightPurple);
   text-shadow: 0px 0px 1px var(--CustomLightPurple);
 }
-[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) [class*="supernav_MenuButton_"]::after {
+
+[class*="supernav_SuperNavMenu_"][class*="supernav_Selected_"]:not([class*="supernav_Disabled_"]) [class*="supernav_MenuButton_"]::after
+{
   background: var(--CustomLightPurple);
 }
 
@@ -48,6 +50,7 @@
 [class*="appactionbutton_Green_"] > [class*="appactionbutton_ButtonChild_"][class*="appactionbutton_StreamingSelector_"],
 [class*="appactionbutton_ButtonChild_"],
 [class*="appdetailsplaysection_DetailsProgressContainer_"] [class*="appdetailsplaysection_DetailsProgressBar_"],
+[class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled,
 .DesktopUI [class*="installrequest_FolderOption_"][class*="installrequest_Active_"],
 button.DialogButton.Primary
 {
@@ -58,7 +61,8 @@ button.DialogButton.Primary
 :not([class*="appactionbutton_Disabled_"]) > [class*="appactionbutton_ButtonChild_"]:hover,
 [class*="appactionbutton_ButtonChild_"][class*="appactionbutton_StreamingSelector_"],
 :not([class*="appactionbutton_Disabled_"]) > .DesktopUI [class*="installrequest_FolderOption_"][class*="installrequest_Active_"]:hover,
-:not([class*="appactionbutton_Disabled_"]) > button.DialogButton.Primary:hover
+:not([class*="appactionbutton_Disabled_"]) > button.DialogButton.Primary:hover,
+[class*="downloads_SectionItem_"][class*="downloads_Active_"] [class*="downloads_Button_"].DialogButton:enabled:hover
 {
   background: var(--CustomDarkerPurple);
 }
@@ -487,7 +491,7 @@ Adapted from LIGHT-UI by Angelo*/
 
 [class*="bottombar_BottomBar_"] {
   width: -webkit-fill-available !important;
-  margin: 0px 370px 0px var(--PadVar) !important;
+  /*margin: 0px 370px 0px var(--PadVar) !important;*/
   padding: 0px !important;
   position: fixed !important;
   top: 0 !important;
@@ -505,20 +509,20 @@ Adapted from LIGHT-UI by Angelo*/
 
 [class*="bottombar_FriendsButton_"] , [class*="bottombar_DownloadStatusContent_"] [class*="bottombar_Icon_"] {
   padding: 0px;
-  margin-top: 4px;
-  zoom: 1.3;
+  margin-top: 5px;
+  transform: scale(1.5);
 }
 
-[class*="bottombar_FriendsButton_"] {
+/*[class*="bottombar_FriendsButton_"] {
   zoom: 1.5 !important;
-}
+}*/
 
 [class*="bottombar_DownloadStatusContent_"] {
   padding: 0px;
 }
 
 [class*="bottombar_DownloadStatusContent_"] [class*="bottombar_Queue_"] {
-  font-size: 15px;
+  font-size: 16px;
   margin-top: 8px;
 }
 

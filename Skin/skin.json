@@ -1,0 +1,84 @@
+{
+  "Patches": [
+    {
+      "MatchRegexString": "https://store.steampowered.com",
+      "TargetCss": "webkit.css",
+      "TargetJs": "webkit.js"
+    },
+    {
+      "MatchRegexString": "https://steamcommunity.com",
+      "TargetCss": "webkit.css",
+      "TargetJs": "webkit.js"
+    },
+    {
+      "MatchRegexString": ".friendsui-container",
+      "TargetCss": "friends.custom.css",
+      "TargetJs": "friends.custom.js"
+    },
+    {
+      "MatchRegexString": "^Steam$",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "^OverlayBrowser_Browser$",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "^SP Overlay:",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "Menu$",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "Supernav$",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "^notificationtoasts_",
+      "TargetCss": "notifications.custom.css",
+      "TargetJs": "notifications.custom.js"
+    },
+    {
+      "MatchRegexString": "^SteamBrowser_Find$",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "^OverlayTab\\d+_Find$",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": "^Steam Big Picture Mode$",
+      "TargetCss": "bigpicture.custom.css",
+      "TargetJs": "bigpicture.custom.js"
+    },
+    {
+      "MatchRegexString": "^QuickAccess_",
+      "TargetCss": "bigpicture.custom.css",
+      "TargetJs": "bigpicture.custom.js"
+    },
+    {
+      "MatchRegexString": "^MainMenu_",
+      "TargetCss": "bigpicture.custom.css",
+      "TargetJs": "bigpicture.custom.js"
+    },
+    {
+      "MatchRegexString": ".ModalDialogPopup",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    },
+    {
+      "MatchRegexString": ".FullModalOverlay",
+      "TargetCss": "libraryroot.custom.css",
+      "TargetJs": "libraryroot.custom.js"
+    }
+  ]
+}
