@@ -1,4 +1,4 @@
-:root {
+:root { /* Here you can change all the colors I used for the theme, with the exception of the little house icon since it's a png. Its color is purple. */
   --BGDefaultColor: #121213;
   --BGLighterColor: #1e1e21;
   --CustomDarkPurple: #5d2871;
@@ -7,10 +7,10 @@
   --CustomLighterPurple: #bb00ff;
   --DownloadText: #ff00de; /*#e800ff*/
   
-  --BGLighterColor00: #1e1e2100;
-  --BGLighterColor40: #1e1e2140;
-  --CustomLighterPurple00: #bb00ff00;
-  --CustomLighterPurple40: #bb00ff40;
+  --BGLighterColor00: #1e1e2100; /* CHANGE ONLY THE FIRST 6 CHARACTERS, KEEP 00 AT THE END AT ALL TIMES */
+  --BGLighterColor40: #1e1e2140; /* CHANGE ONLY THE FIRST 6 CHARACTERS, KEEP 40 AT THE END AT ALL TIMES */
+  --CustomLighterPurple00: #bb00ff00; /* CHANGE ONLY THE FIRST 6 CHARACTERS, KEEP 00 AT THE END AT ALL TIMES */
+  --CustomLighterPurple40: #bb00ff40; /* CHANGE ONLY THE FIRST 6 CHARACTERS, KEEP 40 AT THE END AT ALL TIMES */
 }
 
 [class*="appdetailsworkshopsection_WorkshopContainer_"] {
